@@ -97,7 +97,6 @@ const Input = ({ value, onChange, options }: InputProps) => {
 
     return (
         <>
-
             <InputField onBlur={() => setIsOpen(false)}>
                 <input placeholder="Search City"
                     type="text"
@@ -106,7 +105,6 @@ const Input = ({ value, onChange, options }: InputProps) => {
                     onChange={(e: React.FormEvent<HTMLInputElement>) => { setEnteredValue(e.currentTarget.value) }}
 
                 />
-                {/* <span>{value?.value}</span> */}
                 <CloseBtn onClick={(e) => {
                     e.stopPropagation();
                     setEnteredValue('')
@@ -127,8 +125,6 @@ const Input = ({ value, onChange, options }: InputProps) => {
                     }
                 </Options>
             </InputField>
-
-            {/* <Button onClick={() => { selectOption(selectedItem) }}>Submit</Button> */}
         </>
     )
 

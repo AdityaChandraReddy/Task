@@ -112,7 +112,7 @@ const Details: React.FC = () => {
   useEffect(() => {
     city?.value && getWeatherDetails(city?.value)
       .then((res: any) => {
-        console.log('response', res.data)
+        // console.log('response', res.data)
         setDetails(res.data)
       });
   }, [city])
